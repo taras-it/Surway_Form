@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site of Taras Seredik</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="title">Taras Serediuk Survay Form</h1>
+    <p id="description">
+      Thank you for taking the time to get to know us better.
+    </p>
+    <form id="survay-form">
+      <fieldset>
+        <label id="name-label"></label>
+          Name:
+          <input
+            type="text"
+            id="name"
+            placeholder=" Enter Your  Name"
+            required
+          />
+        </label>
+        <label id="email-label">
+          Email:
+          <input
+            type="email"
+            name="email"
+            placeholder=" Enter Your Email:"
+            required
+          />
+        </label>
+        <label id="number-label">
+          Age (optional):
+          <input
+            type="number"
+            id="number"
+            min="13"
+            max="120"
+            placeholder="Age (years) "
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          How did you hear about us?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Google</option>
+            <option value="2">YouTube</option>
+            <option value="3">Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>Could you recommend us to a friend?</p>
+        <label>
+          <input type="radio" name="recommend" class="inline" />
+          Definitely
+        </label>
+        <label>
+          <input type="radio" name="recommend" class="inline" />
+          Maybe
+        </label>
+        <label>
+          <input type="radio" name="recommend" class="inline" />
+          Not sure
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>
+          What would you like to see?
+          <br />
+          (Check all that apply)
+        </p>
+        <label>
+          <input type="checkbox" name="terms" value="*" class="inline" />
+          Videos
+          <input type="checkbox" name="terms" value="*" class="inline" />
+          Challenges
+          <input type="checkbox" name="terms" value="*" class="inline" />
+          Forum
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          Any comments or suggestions?
+          <textarea
+            name="comments"
+            rows="3"
+            cols="30"
+            placeholder="Enter Your comment here..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="Submit" value="Submit" />
+    </form>
+  </body>
+</html>
